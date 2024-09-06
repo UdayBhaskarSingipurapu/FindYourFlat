@@ -19,7 +19,7 @@ function Login() {
               <input className='form-control' type="password" {...register('password',{required:true})} id="password" />
               {errors.password?.type==='required'&& <p className='text-danger'>*Password is required</p>}
             </div>
-            <button type="submit" className='m-auto text-center btn btn-success'>Register</button>
+            <button type="submit" className='m-auto text-center btn btn-success'>Login</button>
           </form>
     </div>
   )
