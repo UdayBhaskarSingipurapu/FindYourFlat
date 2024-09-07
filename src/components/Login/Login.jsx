@@ -1,10 +1,20 @@
 import './Login.css'
+import { useContext, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
+import { UserLoginContext } from '../../contexts/userLoginContext/userLoginContext'
+import { useNavigate } from 'react-router-dom'
 function Login() {
+  let {loginUser,status}=useContext(UserLoginContext)
   let {register,handleSubmit,formState:{errors}}=useForm()
+  let navigate=useNavigate()
   function handleForm(obj){
-    console.log(obj)
+    loginUser(obj)
   }
+  useEffect(()=>{
+    if(status===true){
+      navigate('/user-profile')
+    }
+  },[status])
   return (
     <div>
       <h1 className='text-center mt-4'>Login</h1>
