@@ -7,7 +7,7 @@ function Register() {
   return (
     <div>
       <h1 className="text-center mt-4">Register</h1>
-      <form className='card mx-auto col-md-8 col-lg-6 col-sm-12 mt-5 bg-light p-3' onSubmit={handleSubmit(handleForm)}>
+      <form className='card mx-auto col-md-8 col-lg-4 col-sm-12 mt-5 bg-light p-3' onSubmit={handleSubmit(handleForm)}>
         <div className="mb-3">
           <label className='form-label' htmlFor="username">Username</label>
           <input className='form-control' type="text" {...register('username',{required:true})} id="username" />

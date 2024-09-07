@@ -1,0 +1,10 @@
+.hov:hover{
+    background-color: #858585;
+    border-radius: 5px;
+}
+.clr{
+    color: rgb(227, 154, 227);
+}
+.bgc{
+    background-color: black;
+}
