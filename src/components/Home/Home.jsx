@@ -13,12 +13,12 @@ function Home() {
   return (
     <div className='home'>
       <div className='mt-5 first'>
-        <div className='mt-4 p-4 ms-4 '>
-        <h1 className='display-3'>Your Next Chapter</h1>
-        <h1 className="mt-3">Starts Here</h1>
-        <button className="btn btn-dark mt-3 fs-5" onClick={registerPlace}>Register Now</button>
+        <div className='mt-3 p-4 ms-4 '>
+          <h1 className='display-2'>Your Next Chapter</h1>
+          <h1 className="display-6 mt-2">Starts Here</h1>
+          <button className="btn btn-dark mt-3 fs-5" onClick={registerPlace}>Register Now</button>
         </div> 
-        <img className='p-2 me-5 ' src="https://media.licdn.com/dms/image/C5112AQGLtwsEpeEfqQ/article-cover_image-shrink_600_2000/0/1520114095302?e=2147483647&v=beta&t=V_y8ANhHF0F8oqb9oWR-snzGz4L_FYTuD6P5sSaXBrU" alt="" />
+        <img className='p-2 mx-auto' src="https://media.licdn.com/dms/image/C5112AQGLtwsEpeEfqQ/article-cover_image-shrink_600_2000/0/1520114095302?e=2147483647&v=beta&t=V_y8ANhHF0F8oqb9oWR-snzGz4L_FYTuD6P5sSaXBrU" alt="" />
       </div> 
       <h1 className='display-4 m-5'>Flats</h1>
       <div className="flats mt-3">
