@@ -1,0 +1,30 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.first {
+    background-color:antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    height: 43vh;
+    overflow: hidden; 
+
+}
+.first > img {
+    width: 400px;
+    height: 100%;
+   
+}
+
+.flats {
+    height: 40vh;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.flats > img {
+    width: 250px;
+    height: 60%;
+    display: inline-block;
+}

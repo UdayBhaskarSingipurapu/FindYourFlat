@@ -1,21 +1,34 @@
 import React from 'react'
+import './Home.css'
+
+import { useNavigate } from 'react-router-dom'
 
 function Home() {
+  let navigate=useNavigate();
+  function registerPlace(){
+    navigate('register');
+  }
+
+
   return (
-    <div className='container'>
-      <h1 className='text-center m-5 bg-warning w-25 mx-auto'>Home</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laborum, aspernatur consequuntur voluptatibus dolor fugit natus molestiae ullam itaque voluptas voluptatum molestias est, amet perferendis! Itaque consequatur sint porro quos!
-        Ratione consectetur provident repellat esse facilis distinctio odit temporibus dolorem ipsum officiis repudiandae deleniti, vitae dolorum libero asperiores nobis delectus est atque cupiditate quam modi? Incidunt, in! Incidunt, adipisci ex!
-        Optio assumenda beatae nam quidem voluptatem libero sit dolorum nulla, sint facilis ab, quia reprehenderit, quis tenetur fuga repudiandae laudantium. Culpa officiis id voluptas excepturi modi nam qui aspernatur exercitationem?
-        Eos quia accusamus suscipit deserunt iusto aliquid magni in ab explicabo! Ipsa eum, nostrum aperiam voluptatem fugit nisi laboriosam incidunt itaque ut, enim, maiores provident. Qui mollitia nisi inventore quos.
-        Provident illum aperiam veniam voluptatem necessitatibus distinctio quaerat enim pariatur ab consectetur temporibus quod inventore placeat minus ad nobis dolores neque ex, ipsum corporis nam vitae deleniti architecto? Vitae, doloribus?
-        Soluta recusandae nihil necessitatibus ipsam eum earum beatae consectetur vero veniam? Praesentium eos quasi itaque, ullam minima totam natus, provident, blanditiis perferendis omnis ea commodi aut necessitatibus consequuntur consequatur harum.
-        Qui dolorem quis placeat reprehenderit necessitatibus fugit veritatis. Dolorum accusantium veniam amet beatae numquam ut autem cum ea aspernatur fugit voluptatem laudantium quod pariatur, praesentium, molestias, architecto id maxime tempora.
-        Error obcaecati blanditiis dignissimos temporibus esse fuga mollitia eaque! Sint, ducimus velit. Corporis provident eligendi quos similique, voluptate nobis, repellendus reprehenderit velit voluptatum iste perferendis labore fugiat ut illo ipsum!
-        Dolores aliquid a cum. Reprehenderit molestias omnis doloremque cum alias veritatis enim blanditiis odio mollitia praesentium quas dolorum officia adipisci, est quos assumenda nesciunt aliquam sed perferendis dolore non deleniti!
-        Voluptates adipisci provident atque possimus, sunt eligendi sapiente consectetur dolorum molestias dolorem qui nesciunt, vel enim quaerat nam laudantium aspernatur et ipsa ex distinctio saepe quibusdam? Itaque maxime adipisci nesciunt!
-      </p>
+    <div className=''>
+      <div className='mt-5 first'>
+        <div className='mt-4 p-4 ms-4 '>
+        <h1 className='display-3'>Your Next Chapter</h1>
+        <h1 className="mt-3">Starts Here</h1>
+        <button className="btn btn-dark mt-3 fs-5" onClick={registerPlace}>Register Now</button>
+        </div> 
+        <img className='p-2 me-5 ' src="https://media.licdn.com/dms/image/C5112AQGLtwsEpeEfqQ/article-cover_image-shrink_600_2000/0/1520114095302?e=2147483647&v=beta&t=V_y8ANhHF0F8oqb9oWR-snzGz4L_FYTuD6P5sSaXBrU" alt="" />
+      </div> 
+      <div className="flats mt-3">
+        <h1 className='display-4'>Flats</h1>
+        <img className='ms-2 me-2 mb-2' src="https://jumanji.livspace-cdn.com/magazine/wp-content/uploads/2019/12/04164807/Space-saving-Ideas-for-Small-Flats-Enclosed-Balcony.jpg" alt="" />
+        <img className='ms-2 me-2 mb-2' src="https://5.imimg.com/data5/CX/TL/MY-40169806/flat-interior.png" alt="" />
+        <img className='ms-2 me-2 mb-2' src="https://pix10.agoda.net/hotelImages/32826434/-1/b8bf5380f7b817f38dac1f843060506d.jpg?ce=0&s=414x232&ar=16x9" alt="" />
+        <img className='ms-2 me-2 mb-2' src="https://assets.architecturaldigest.in/photos/60084c4a1b516d492c3ab2c3/16:9/w_2560%2Cc_limit/Kochi-3-bhk-apartment-studio-nirvana-feature-1366x768.jpg" alt="" />
+        <img src="https://www.hotels-in-pune.net/data/Pics/OriginalPhoto/11582/1158263/1158263823/pic-elegant-suite-with-indoor-swimming-pool-near-pune-6.JPEG" alt="" className="ms-2 me-2 mb-2" />
+        <img src="https://img.freepik.com/free-photo/cozy-living-room-modern-apartment_181624-58445.jpg" alt="" className="ms-2 me-2 mb-2" />
+      </div>
     </div>
   )
 }
