@@ -2,9 +2,49 @@
     background-color: #858585;
     border-radius: 5px;
 }
+.head{
+    display: flex;
+}
+.head>li{
+    list-style-type: none;
+    padding: 5px 20px;
+}
 .clr{
     color: rgb(227, 154, 227);
 }
 .bgc{
     background-color: black;
+}
+.side{
+    width: 300px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.588);
+    backdrop-filter: blur(2px);
+    right: 0;
+    display: none;
+    position: fixed;
+    z-index: 1000;
+}
+.side>li:first-child{
+    padding-top: 50px;
+}
+.icon{
+    cursor: pointer;
+    width: 20px;
+    display: none;
+}
+.side>li{
+    list-style-type: none;
+    padding: 20px 0px;
+}
+@media screen and (max-width:600px){
+    .head{
+        display: none;
+    }
+    .icon{
+        display: block;
+    }
+    .side{
+        display: block;
+    }
 }
