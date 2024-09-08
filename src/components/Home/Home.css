@@ -1,4 +1,4 @@
-*{
+.home{
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
 }
@@ -12,9 +12,8 @@
 
 }
 .first > img {
-    width: 400px;
+    width: 500px;
     height: 100%;
-   
 }
 
 .flats {
