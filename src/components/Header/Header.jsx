@@ -32,7 +32,7 @@ function Header() {
                 {
                   (status===false)?
                   (<li><Link className="nav-link text-white hov" to={'login'} onClick={toggleVisible}><IoLogIn className="clr mx-2" />Login</Link></li>):
-                  (<li><Link className="nav-link text-white hov" to={'login'} onClick={()=>{toggleVisible,logoutUser}}><IoLogOut className="clr mx-2" />Logout</Link></li>)
+                  (<li><Link className="nav-link text-white hov" to={'login'} onClick={()=>{toggleVisible(),logoutUser()}}><IoLogOut className="clr mx-2" />Logout</Link></li>)
                 }
           </ul>)
         }

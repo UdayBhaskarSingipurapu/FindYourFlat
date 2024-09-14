@@ -12,7 +12,7 @@ function Login() {
   function handleForm(obj){
     loginUser(obj)
   }
-  let navigateToLogin = () =>{
+  let navigateToRegister = () =>{
     navigate('../register')
   }
   useEffect(()=>{
@@ -35,7 +35,7 @@ function Login() {
               <input className='form-control' type="password" {...register('password',{required:true})} id="password" />
               {errors.password?.type==='required'&& <p className='text-danger'>*Password is required</p>}
             </div>
-            <h5 className="text-center">Don't have an account?<span onClick={navigateToLogin} className="ptr mx-1 text-primary">Register</span></h5>
+            <h5 className="text-center">Don't have an account?<span onClick={navigateToRegister} className="ptr mx-1 text-primary">Register</span></h5>
             <button id='btn1' type="submit" className='m-auto text-center btn btn-success fw-bold'>Register</button>
           </form>
        

@@ -19,7 +19,7 @@ function UserLoginStore({children}) {
       setErr('')
     }
   return (
-    <UserLoginContext.Provider value={{user,loginUser,token,status,err}}>
+    <UserLoginContext.Provider value={{user,loginUser,token,status,err,logoutUser}}>
       {children}
     </UserLoginContext.Provider>
   )
