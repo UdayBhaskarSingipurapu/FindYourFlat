@@ -5,10 +5,15 @@ import { useForm } from "react-hook-form"
 import './Register.css'
 import { IoMdContact } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 function Register() {
   let {register,handleSubmit,formState:{errors}}=useForm()
+  let navigate=useNavigate()
   function handleForm(obj){
     console.log(obj);
+  }
+  let navigateToLogin = ()=>{
+    navigate('../login')
   }
   return (
     <div>
@@ -46,6 +51,8 @@ function Register() {
           </div>
           {errors.role?.type==='required'&& <p className='text-danger'>*Role is required</p>}
         </div> */}
+
+        <h5 className="text-center">Already has an account?<span onClick={navigateToLogin} className="ptr mx-1 text-primary">Login</span></h5>
         <button type="submit" id="btn"className='m-auto text-center btn btn-success'>Register</button>
       </form>
     </div>
