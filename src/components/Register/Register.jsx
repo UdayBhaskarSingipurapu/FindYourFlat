@@ -53,7 +53,7 @@ function Register() {
         </div> */}
 
         <h5 className="text-center">Already has an account?<span onClick={navigateToLogin} className="ptr mx-1 text-primary">Login</span></h5>
-        <button type="submit" id="btn"className='m-auto text-center btn btn-success'>Register</button>
+        <button type="submit" id="btn" className='m-auto text-center btn btn-success' onClick={navigateToLogin}>Register</button>
       </form>
     </div>
   )
