@@ -16,7 +16,7 @@ function Register() {
     navigate('../login')
   }
   return (
-    <div>
+    <div className="cards">
       <h1 className="text-center mt-4">Register</h1>
       <form id="form"className='card mx-auto col-md-8 col-lg-4 col-sm-12 mt-5  p-3' onSubmit={handleSubmit(handleForm)}>
         <div className="mb-3">
